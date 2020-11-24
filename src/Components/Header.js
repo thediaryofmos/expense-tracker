@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Header = () => {
     return(
-        <h1 className = "add">
+        <h1>
             Expense Tracker by OSME's
         </h1>
     )
