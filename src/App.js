@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 //Importing Components
@@ -7,10 +7,12 @@ import {Balance} from './Components/Balance'
 import {AccountSummary} from './Components/AccountSummary'
 import {TransactionHistory} from './Components/TransactionHistory'
 import {AddTransaction} from './Components/AddTransaction'
+//importing GlobalProvider
+import { GlobalProvider } from './Context/GlobalState';
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className = "container">
         <Balance />
@@ -18,8 +20,7 @@ function App() {
         <TransactionHistory />
         <AddTransaction />
       </div>
-
-    </div>
+    </GlobalProvider>
   );
 }
 
