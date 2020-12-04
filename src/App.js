@@ -7,6 +7,7 @@ import {Balance} from './Components/Balance'
 import {AccountSummary} from './Components/AccountSummary'
 import {TransactionHistory} from './Components/TransactionHistory'
 import {AddTransaction} from './Components/AddTransaction'
+
 //importing GlobalProvider
 import { GlobalProvider } from './Context/GlobalState';
 
