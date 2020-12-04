@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const Transactions = () => {
+export const Transactions = ({transaction}) => {
     return(
         <li className = "plus">
-                    Project 1 Income
-                    <span>$1000</span>
+                    {transaction.description}
+                    <span>{transaction.transactionAmount}</span>
                     <button className = "delete-btn">X</button>
         </li>
     )
